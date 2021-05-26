@@ -1,0 +1,39 @@
+#nav_title {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#title {
+    font-size: 5em;
+}
+.container, .formContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#newbook {
+    justify-content: center;
+    margin: auto;
+}
+
+#new_book_form {
+    display: grid;
+    margin: auto;
+    padding: 10px;
+}
+
+.form-row{
+    padding: 5px;
+}
+
+#submitButton {
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}

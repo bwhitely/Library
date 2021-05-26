@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark" id="nav_title">
+        <span class="navbar-brand mb-0 h1" id="title">Library</span>
+    </nav>
+    <!-- Main Body -->
+    <body>
+        <div class="formContainer">
+            <!-- Form -->
+            <form id="new_book_form" method="dialog">
+                <h3 class="popup_title" style="text-align: center;">Add Book</h3>
+
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control form-control-sm" id="title_input" placeholder="Title" required> 
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control form-control-sm" id="author_input" placeholder="Author" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <input type="number" class="form-control form-control-sm" id="pages_input" placeholder="Pages" required>
+                    </div>
+                    <div class="col">
+                        <select class="form-control form-control-sm" id="read_input" required>
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                        <small id="read_text" class="form-text text-muted">Already read?</small>
+                    </div>
+                </div>
+
+                <div class="form-row" id="submitButton">
+                    <div class="col">
+                        <button type="submit" form="new_book_form" class="btn btn-dark" id="submitBtn" value="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Table -->
+        <div class="container">
+            <table class="table table-bordered" id="books">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Delete</th>
+                        <th scope="col" style="width: 45%">Title</th>
+                        <th scope="col" style="width: 35%">Author</th>
+                        <th scope="col" style="width: 5%">Pages</th>
+                        <th scope="col" style="width: 5%">Read?</th>
+                        <th scope="col">Read/Unread</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p></p>
+        </footer>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
